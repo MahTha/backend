@@ -54,6 +54,12 @@ const data={
 app.get("/user",(req,res)=>{
   res.json(data)
 })
+app.get("/login",(req,res)=>{
+  res.send("<h1>Login</h1>")
+})
+app.get("/logout",(req,res)=>{
+  res.send("<h1>Logout</h1>")
+})
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
